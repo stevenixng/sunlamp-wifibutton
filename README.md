@@ -24,6 +24,8 @@ Use the continuity tester on the voltmeter to find the button contacts. Probe ar
 
 To power the D1 mini, I soldered the power supply to the A/C and the other end to the D1 mini.
 
+![inside](https://github.com/stevenixng/sunlamp-wifibutton/blob/master/pictures/inside.jpg "sorry for the terrible graphics")
+
 ## home assistant entry in switches.yml
 ```
   - platform: mqtt
