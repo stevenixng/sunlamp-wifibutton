@@ -1,8 +1,10 @@
 # sunlamp-wifibutton
 
 ## Making a sunlamp WiFi enabled
-We have a sunlamp that we use when working from home during dreay days. Unfortunately there is a 60 minute timer and the lamp shuts off and we have to walk over to hit the button again. I've wired a wemos D1 mini to the button and made the device WiFi enabled. These plans could be used to toggle a button press for just about anything!
+We have a sunlamp that we use when working from home during dreary days. Unfortunately there is a 60 minute timer and the lamp shuts off and we have to walk over to hit the button again. I've wired a Wemos D1 mini to the button and made the device WiFi enabled. These plans could be used to toggle a button press for just about anything!
 
+### Video demo
+[![youtube demo](https://img.youtube.com/vi/rt5SqVs1bFE/0.jpg)](https://www.youtube.com/watch?v=rt5SqVs1bFE)
 
 ### Hardware
 * [Wemos D1 Mini](https://www.banggood.com/3Pcs-Wemos-D1-Mini-V2_3_0-WIFI-Internet-Of-Things-Development-Board-Based-ESP8266-ESP-12S-4MB-FLASH-p-1230988.html?rmmds=myorder)
@@ -24,9 +26,13 @@ Use the continuity tester on the voltmeter to find the button contacts. Probe ar
 
 To power the D1 mini, I soldered the power supply to the A/C and the other end to the D1 mini.
 
+
+
 ![inside](https://github.com/stevenixng/sunlamp-wifibutton/blob/master/pictures/inside.jpg "sorry for the terrible graphics")
 
 ## home assistant entry in switches.yml
+I have my configuration split up into separate files like switches.yml. This example should be enough to go on if you have been messing with Home Assistant.
+
 ```
   - platform: mqtt
     name: "sunlamp"
